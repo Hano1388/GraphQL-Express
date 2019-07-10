@@ -56,3 +56,12 @@ fragment companyDetails on Company {
     name
     description
 }
+
+// Adding a record to the users table
+mutation {
+    addUser(firstname: "Arman", age: 28) {
+        id
+        firstname
+        age
+    }
+}
