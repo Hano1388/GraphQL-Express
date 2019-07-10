@@ -65,3 +65,10 @@ mutation {
         age
     }
 }
+
+// Delete a record from user table
+mutation {
+    deleteUser(id: "2") {
+        id
+    }
+}
