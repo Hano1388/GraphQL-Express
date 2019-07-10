@@ -57,7 +57,7 @@ fragment companyDetails on Company {
     description
 }
 
-// Adding a record to the users table
+// Adding a record to the users table GraphQL query
 mutation {
     addUser(firstname: "Arman", age: 28) {
         id
@@ -66,9 +66,18 @@ mutation {
     }
 }
 
-// Delete a record from user table
+// Delete a record from user table GraphQL query
 mutation {
     deleteUser(id: "2") {
         id
+    }
+}
+
+// Updating a record from user table GraphQL query
+mutation {
+    editUser(id: "1", firstname: "Hann", age: 10) {
+        id
+        firstname
+        age
     }
 }
